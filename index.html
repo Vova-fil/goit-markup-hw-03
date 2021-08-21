@@ -8,7 +8,8 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css" />
@@ -18,28 +19,32 @@
 <body>
     <!-- Шапка сайта -->
     <header class="page-header">
-        <nav>
-            <ul class="site-nav list">
-                <li lang="en" class="site-nav-logo"><a href="WebStudio">Web<span>Studio</span></a></li>
-                <li><a href="./index.html" class="link">Студия</a></li>
-                <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-                <li><a href="Контакты" class="link">Контакты</a></li>
+        <div class="container main-nav">
+            <nav>
+                <ul class="site-nav list">
+                    <li lang="en" class="nav-item site-nav-logo"><a href="WebStudio">Web<span>Studio</span></a></li>
+                    <li class="nav-item"><a href="./index.html" class="link">Студия</a></li>
+                    <li class="nav-item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+                    <li class="nav-item"><a href="Контакты" class="link">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="link-items list">
+                <li class="nav-link-item"  lang="en"><a href="mailto:info@devstudio.com" class="current">info@devstudio.com</a></li>
+                <li class="nav-link-item"><a href="tel:+380961111111" class="current">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-        <ul class="link-items list">
-            <li lang="en"><a href="mailto:info@devstudio.com" class="current">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="current">+38 096 111 11 11</a></li>
-        </ul>
-
+        </div>
     </header>
     <main>
         <!-- Герой -->
         <section class="hero">
+            <div class="container">
             <h1 class="title">Эффективные решения для вашего бизнеса</h1>
             <button class="button" type="button">Заказать услугу</button>
+            </div>
         </section>
         <!-- Преимущества -->
         <section class="text-benefits">
+            <div class="container">
             <h2>Преимущества</h2>
 
             <ul class="list">
@@ -68,11 +73,13 @@
                     </p>
                 </li>
             </ul>
+            </div>
         </section>
         <section>
+            <div class="img container">
             <h2>Чем мы занимаемся</h2>
-
-            <ul class="list">
+           
+            <ul class="list-img list">
                 <li>
                     <img src="images/box1.jpg" alt="Пишем программы" width="370" height="294" />
                 </li>
@@ -84,16 +91,18 @@
                     <img src="./images/box3.jpg" alt="Создаем игры" width="370" height="294" />
                 </li>
             </ul>
+            </div>
         </section>
-        <section class="position">
+        <section>
+            <div class="positions container">
             <h2>Наша команда</h2>
-            <ul class="list">
-                <li>
+            <ul class="position-list list">
+                <li class="position-list-img">
                     <img src="./images/team-card1.jpg " alt="Игорь Демьяненко" width="270" height="260" />
                     <h3>Игорь Демьяненко</h3>
                     <p lang="en">Product Designer</p>
                 </li>
-                <li>
+                <li class="position-list-img">
                     <img src="./images/team-card2.jpg " alt="Ольга Репина" width="270" height="260" />
                     <h3>Ольга Репина</h3>
                     <p lang="en">Frontend Developer</p>
@@ -109,14 +118,15 @@
                     <p lang="en">UI Designer</p>
                 </li>
             </ul>
+            </div>
         </section>
 
     </main>
 
     <!-- Футер -->
     <footer class="bottom">
-
-        <ul class="link list">
+        <div class="container">
+        <ul class="bottom-list link list">
             <li lang="en" class="bottom-logo"><a href="WebStudio" class="link">Web<span>Studio</span></a></li>
             <li>
                 <address>
@@ -126,7 +136,7 @@
             <li lang="en"><a href="mailto:info@example.com" class="link-bottom link">info@example.com</a></li>
             <li><a href="tel:+380991111111" class="link-bottom link">+38 099 111 11 11</a></li>
         </ul>
-
+        </div>
     </footer>
 
 </body>
