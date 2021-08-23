@@ -103,6 +103,7 @@ h3 {
 /*  Шапка Site nav */
 .page-header {
   width: 1200px;
+
   padding-left: 15px;
   padding-right: 15px;
 
@@ -112,6 +113,7 @@ h3 {
   display: flex;
   align-items: center;
   width: 1200px;
+   height: 80px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -246,23 +248,29 @@ h3 {
   display: flex;
   justify-content: space-between;
 }*/
-.position-list-img{
+/*.position-list {
+
+}*/
+/*.position-list-img{
   display: flex;
   justify-content: space-between;
+  margin-left: 0px;
+}*/
+.position h2 {
+ text-align: center; 
 }
-
-.positions h2 {
+.position-list li {
   text-align: center;
 }
-.position-list-img {
+/*.position-list-img {
   /*position: absolute;*/
   width: 270px;
   height: 368px;
   left: 215px;
-  top: 1635px;
+  top: 1635px;*/
 }
-.position-list-img h3 {
-  text-align: center;
+/*.position-list-img h3 {
+  text-align: center;*/
 }
 .position-list p {
   /*padding: 0;
@@ -277,16 +285,22 @@ h3 {
 .bottom {
   display: block;
   background-color: #2f303a;
-  height: 252px;
-}
+  /*height: 252px;*/
+  
+ }
 .bottom .container {
   display: block;
   background-color: #2f303a;
-
-}
+   margin-top: 0px;
+   
+ }
 .bottom-list {
   display: block;
+  display: table-cell;
+  margin-top: 0px;
   align-content: center;
+  vertical-align: middle;
+  
   
 }
 .link-bottom {
@@ -333,6 +347,9 @@ h3 {
 /* Наше портфолио */
 .portfolio {
   background-color: #ffffff;
+   text-align: center;
+  /* width: 11700px;
+   margin-left: auto;*/
 }
 
 }
@@ -341,19 +358,25 @@ h3 {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.portfolio.container: nth-child (3n) {
+/*.portfolio.container: nth-child (3n) {
   margin-right: 0px;
+}*/
+.portfolio-list {
+  display: flex;
+   justify-content: center;
 }
 .portfolio-img {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 30px;
+  width: 1300px;
+ /* margin-right: 15px;
+  margin-left: 15px;*/
   }
-  .portfolio-img: nth-child (3n) {
-    margin-right: 0px;
-  }
-.portfolio-img-item {
+.portfolio-img  nth-child (3n) {
   margin-right: 0px;
+}
+/*.portfolio-img li {
+  margin-right: 0px;*/
 }
 .portfolio h2 {
   font-weight: 700;
